@@ -239,7 +239,7 @@ deno是一个基于rust的js/ts运行时，可以用来运行js/ts代码。比no
 
 # 15. dust
 
-dust是一个用来查看磁盘占用的工具，类似于du。
+dust是一个用来查看磁盘占用的工具，类似于du。这玩意是真好用，推荐使用。
 
 WARNING: 由于rust的版本问题，目前只能在windows上使用。而且需要: VCRUNTIME140.dll
 
