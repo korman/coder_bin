@@ -134,3 +134,16 @@ mdbook是一个用来生成文档的工具，可以用来生成文档，类似gi
 alacritty是一个快速的终端模拟器，可以用来替代windows的cmd，powershell，git bash等。
 
 个人感觉很不错，推荐使用。
+
+### 11. bat
+
+bat是一个带有语法高亮和Git集成的cat(查看文件)克隆。
+
+简单使用
+
+    ```bash
+    bat <file>
+
+    # 例如
+    bat ./xxx.txt
+    ```
