@@ -147,3 +147,16 @@ bat是一个带有语法高亮和Git集成的cat(查看文件)克隆。
     # 例如
     bat ./xxx.txt
     ```
+
+### 12. lsd
+
+lsd是一个基于 Rust 语言编写的 ls 命令替代品，增加了颜色、图标、树视图、更多格式选项等。可以在 Archlinux、Fedora、macOS、FreeBSD、Windows、Android、Ubuntu、Debian 等多种操作系统上安装。
+
+简单使用
+
+    ```bash
+    lsd <path>
+
+    # 例如
+    lsd ./xxx
+    ```
