@@ -160,3 +160,66 @@ lsd是一个基于 Rust 语言编写的 ls 命令替代品，增加了颜色、�
     # 例如
     lsd ./xxx
     ```
+
+### 13. fd
+
+fd是一个简单、快速且用户友好的查找工具，类似于find。但是真的比find好用多了。
+
+简单使用
+
+    ```bash
+    # 简单使用 假设你想找到你的一个旧脚本（它名字包含 netflix）
+
+    > fd netfl
+    Software/python/imdb-ratings/netflix-details.py
+
+    # 搜索模式被当作一个正则表达式来处理。这里，我们搜索以 x 开头、以 rc 结尾的条目：
+    > fd '^x.*rc$'
+    X11/xinit/xinitrc
+    X11/xinit/xserverrc
+
+    # 如果我们想搜索一个特定的目录，可以把它作为 fd 的第二个参数：
+    > fd passwd /etc
+    /etc/default/passwd
+    /etc/pam.d/passwd
+    /etc/passwd
+
+    # 列出所有文件，递归
+    > fd
+    testenv
+    testenv/mod.rs
+    tests.rs
+
+    # 如果你想使用这个功能来列出一个给定目录中的所有文件，你必须使用一个全包模式，如 . 或 ^
+    > fd . fd/tests/
+    testenv
+    testenv/mod.rs
+    tests.rs
+
+    # 搜索一个特定的文件扩展名
+    > cd fd
+    > fd -e md
+    CONTRIBUTING.md
+    README.md
+
+    # -e 选项可以与搜索模式结合使用：
+    > fd -e rs mod
+    src/fshelper/mod.rs
+    src/lscolors/mod.rs
+    tests/testenv/mod.rs
+
+    # 搜索一个特定的文件名
+    # 要找到与所提供的搜索模式完全一致的文件，请使用 -g（或 --glob）选项：
+    > fd -g libc.so /usr
+    /usr/lib32/libc.so
+    /usr/lib/libc.so
+
+    # 隐藏和忽略的文件
+    > fd pre-commit
+    > fd -H pre-commit
+    .git/hooks/pre-commit.sample
+
+    # 匹配完整路径
+    > fd -p -g '**/.git/config'
+    > fd -p '.*/lesson-\d+/[a-z]+.(jpg|png)'
+    ```
