@@ -224,7 +224,7 @@ fd是一个简单、快速且用户友好的查找工具，类似于find。但�
     > fd -p '.*/lesson-\d+/[a-z]+.(jpg|png)'
     ```
 
-# 14. deno
+### 14. deno
 
 deno是一个基于rust的js/ts运行时，可以用来运行js/ts代码。比nodejs更加安全，更加好用。
 
@@ -237,7 +237,7 @@ deno是一个基于rust的js/ts运行时，可以用来运行js/ts代码。比no
     deno run ./xxx.ts
     ```
 
-# 15. dust
+### 15. dust
 
 dust是一个用来查看磁盘占用的工具，类似于du。这玩意是真好用，推荐使用。
 
@@ -251,3 +251,7 @@ WARNING: 由于rust的版本问题，目前只能在windows上使用。而且需
     # 例如
     dust ./xxx
     ```
+
+### 16. lux
+
+Lux是下载网络上视频的命令行工具，类似于youtube-dl。其支持包含抖音，爱奇艺，优酷，b站，腾讯等众多国内外在线视频下载方便快捷。
