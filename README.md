@@ -263,3 +263,30 @@ topgrade是一个用来更新软件的工具，类似于linux的apt-get update�
 ### 18. go-stress-testing(go-stress-testing-win.exe)
 
 go-stress-testing是一个用来压测网站的工具，类似于linux的ab。
+
+### 19. tgpt(tgpt.exe)
+
+tgpt是命令行使用ChatGPT的工具，可以用来聊天。
+
+### 20. vcpkg
+
+vcpkg是一个用来管理c++库的工具，类似于linux的apt-get。
+
+使用方法：
+
+    ```bash
+    # 安装库
+    vcpkg install <name>
+
+    # 例如
+    vcpkg install boost
+
+    # 查看库
+    vcpkg list
+
+    # 卸载库
+    vcpkg remove <name>
+
+    # 例如
+    vcpkg remove boost
+    ```
