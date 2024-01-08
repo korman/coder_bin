@@ -290,3 +290,70 @@ vcpkg是一个用来管理c++库的工具，类似于linux的apt-get。
     # 例如
     vcpkg remove boost
     ```
+
+### 21. gping
+
+gping是一个用来ping的工具，类似于linux的ping。
+
+```bash
+$ gping --help
+Ping, but with a graph.
+
+Usage: gping [OPTIONS] [HOSTS_OR_COMMANDS]...
+
+Arguments:
+  [HOSTS_OR_COMMANDS]...  Hosts or IPs to ping, or commands to run if --cmd is provided. Can use cloud shorthands like aws:eu-west-1.
+
+Options:
+      --cmd
+          Graph the execution time for a list of commands rather than pinging hosts
+  -n, --watch-interval <WATCH_INTERVAL>
+          Watch interval seconds (provide partial seconds like '0.5'). Default for ping is 0.2, default for cmd is 0.5.
+  -b, --buffer <BUFFER>
+          Determines the number of seconds to display in the graph. [default: 30]
+  -4
+          Resolve ping targets to IPv4 address
+  -6
+          Resolve ping targets to IPv6 address
+  -i, --interface <INTERFACE>
+          Interface to use when pinging
+  -s, --simple-graphics
+          Uses dot characters instead of braille
+      --vertical-margin <VERTICAL_MARGIN>
+          Vertical margin around the graph (top and bottom) [default: 1]
+      --horizontal-margin <HORIZONTAL_MARGIN>
+          Horizontal margin around the graph (left and right) [default: 0]
+  -c, --color <color>
+          Assign color to a graph entry. This option can be defined more than once as a comma separated string, and the order which the colors are provided will be matched against the hosts or commands passed to gping. Hexadecimal RGB color codes are accepted in the form of '#RRGGBB' or the following color names: 'black', 'red', 'green', 'yellow', 'blue', 'magenta','cyan', 'gray', 'dark-gray', 'light-red', 'light-green', 'light-yellow', 'light-blue', 'light-magenta', 'light-cyan', and 'white'
+  -h, --help
+          Print help information
+  -V, --version
+          Print version information
+      --clear
+          Clear the graph from the terminal after closing the program
+```
+
+### 22. lazygit
+
+lazygit是一个用来管理git的工具，是界面化的。
+
+### 23. aria2c(v1.37.0)
+
+aria2c是一个用来下载文件的工具，类似于linux的wget。
+支持p2p下载，多线程下载，断点续传等。
+
+### 24. protoc(protoc_rust v3.19.4)
+
+protoc是一个用来生成protobuf文件的工具，类似于linux的protoc。
+这个是用来生成rust的protobuf文件的。
+且本身是由rust编写的。
+
+### 25. tokei(v13.0.0-alpha.0)
+
+Tokei是一个显示代码信息的统计程序
+
+这是使用tokei的基本方法. 这会报告./foo和所有子文件夹代码.
+
+```bash
+$ tokei ./foo
+```
